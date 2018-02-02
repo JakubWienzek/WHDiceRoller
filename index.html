@@ -13,15 +13,18 @@
             <button ng-click="ctrl.addWrongDie()">WRONG</button>
             <br>
             <!--<input type="text" ng-model="ctrl.dicePool()"/>-->
-            <div>{{ctrl.dicePool()}}</div>
+            <!--<div>{{ctrl.dicePool()}}</div>-->
         </div>
 
         </br>
 
         <div ng-controller="PoolController as ctrl">
-            <!--<input type="text" ng-model="ctrl.getPool()"/>-->
             <div>{{ctrl.getPool()}}</div>
-            <br>
+        </div>
+
+        <br>
+
+        <div ng-controller="ButtonController as ctrl">
             <button ng-click="ctrl.roll()">Roll</button>
             <button ng-click="ctrl.reset()">Reset</button>
         </div>
@@ -38,6 +41,7 @@
         <script src="app.js"></script>
         <script src="src/dice.controller.js"></script>
         <script src="src/pool.controller.js"></script>
+        <script src="src/button.controller.js"></script>
         <script src="src/diceRoller.service.js"></script>
     </body>
 </html>

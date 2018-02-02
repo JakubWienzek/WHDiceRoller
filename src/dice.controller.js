@@ -14,27 +14,16 @@
                 return dicePool;
             }
 
-            function getDicePool() {
-                dicePool = [];
-                var dicePoolTemp = DiceService.getDicePool();
-                for(var i in dicePoolTemp) {
-                    dicePool.push(dicePoolTemp[i].name);
-                }
-            }
-
             ctrl.addBlueDie = function() {
                 DiceService.addDie("blue");
-                getDicePool();
             }
 
             ctrl.addWhiteDie = function() {
                 DiceService.addDie("white");
-                getDicePool();
             }
 
             ctrl.addWrongDie = function() {
                 DiceService.addDie("wrong");
-                getDicePool();
             }
         }
 }
