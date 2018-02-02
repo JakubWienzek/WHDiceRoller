@@ -22,6 +22,26 @@
                 DiceService.addDie("white");
             }
 
+            ctrl.addYellowDie = function() {
+                DiceService.addDie("yellow");
+            }
+
+            ctrl.addRedDie = function() {
+                DiceService.addDie("red");
+            }
+
+            ctrl.addGreenDie = function() {
+                DiceService.addDie("green");
+            }
+
+            ctrl.addBlackDie = function() {
+                DiceService.addDie("black");
+            }
+
+            ctrl.addPurpleDie = function() {
+                DiceService.addDie("purple");
+            }
+
             ctrl.addWrongDie = function() {
                 DiceService.addDie("wrong");
             }

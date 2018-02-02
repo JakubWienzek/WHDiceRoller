@@ -10,6 +10,11 @@
         <div ng-controller="DiceController as ctrl">
             <button ng-click="ctrl.addBlueDie()">Blue</button>
             <button ng-click="ctrl.addWhiteDie()">White</button>
+            <button ng-click="ctrl.addYellowDie()">Yellow</button>
+            <button ng-click="ctrl.addRedDie()">Red</button>
+            <button ng-click="ctrl.addGreenDie()">Green</button>
+            <button ng-click="ctrl.addBlackDie()">Black</button>
+            <button ng-click="ctrl.addPurpleDie()">Purple</button>
             <button ng-click="ctrl.addWrongDie()">WRONG</button>
             <br>
             <!--<input type="text" ng-model="ctrl.dicePool()"/>-->
@@ -19,6 +24,8 @@
         </br>
 
         <div ng-controller="PoolController as ctrl">
+            <div>{{ctrl.getResults()}}</div>
+            <br>
             <div>{{ctrl.getPool()}}</div>
         </div>
 
