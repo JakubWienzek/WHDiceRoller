@@ -113,7 +113,7 @@
             this.name = "black";
             this.currentValue = '0';
             this.sidesCount = 6;
-            this.sidesTable = ['0','0','0','1','1','2'];
+            this.sidesTable = ['0','0','0','3','3','4'];
         }
     }
 
