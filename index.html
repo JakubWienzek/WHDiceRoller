@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en-US" charset="UTF-8">
+        <title="Warhammer Dice Roller"></title>
+    </head>
+    <body ng-app="DiceRoller">
+        <h1>Dice Roller</h1>
+
+        <div ng-controller="DiceController as ctrl">
+            <button ng-click="ctrl.addBlueDie()">Blue</button>
+            <button ng-click="ctrl.addWhiteDie()">White</button>
+            <button ng-click="ctrl.addWrongDie()">WRONG</button>
+            <br>
+            <!--<input type="text" ng-model="ctrl.dicePool()"/>-->
+            <div>{{ctrl.dicePool()}}</div>
+        </div>
+
+        </br>
+
+        <div ng-controller="PoolController as ctrl">
+            <!--<input type="text" ng-model="ctrl.getPool()"/>-->
+            <div>{{ctrl.getPool()}}</div>
+            <br>
+            <button ng-click="ctrl.roll()">Roll</button>
+            <button ng-click="ctrl.reset()">Reset</button>
+        </div>
+        
+
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+        <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <script src="lib/angular.min.js"></script>
+        <!--<script src="lib/angular-ui-router.min.js"></script>-->
+
+        <script src="app.js"></script>
+        <script src="src/dice.controller.js"></script>
+        <script src="src/pool.controller.js"></script>
+        <script src="src/diceRoller.service.js"></script>
+    </body>
+</html>
