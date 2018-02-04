@@ -1,7 +1,13 @@
+body {
+    color: #ddd;
+    background-color: #222222;
+    background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
 .die {
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border: solid 2px black;
     margin: 5px;
     background-repeat: no-repeat;
@@ -19,11 +25,13 @@
 }
 
 .blue {
-    background-color: rgb(30, 144, 255);
+    background-color: #0e78b6;
 }
 
 .blue:hover {
-    background-color: deepskyblue;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(14,120,182,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(14,120,182,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(14,120,182,0.5);
 }
 
 .white {
@@ -31,31 +39,39 @@
 }
 
 .white:hover {
-    background-color: azure;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(255,255,255,0.5);
 }
 
 .yellow {
-    background-color: gold;
+    background-color: #ffee0a;
 }
 
 .yellow:hover {
-    background-color: rgb(255, 235, 0);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(255,238,10,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(255,238,10,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(255,238,10,0.5);
 }
 
 .red {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(240, 29, 35);
 }
 
 .red:hover {
-    background-color: rgb(255, 80, 0);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(240, 29, 35,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(240, 29, 35,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(240, 29, 35,0.5);
 }
 
 .green {
-    background-color: forestgreen;
+    background-color: rgb(23, 149, 65);
 }
 
 .green:hover {
-    background-color: rgb(34, 169, 34);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(23, 149, 65,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(23, 149, 65,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(23, 149, 65,0.5);
 }
 
 .black {
@@ -64,16 +80,20 @@
 }
 
 .black:hover {
-    background-color: rgb(70, 70, 70);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(70,70,70,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(70,70,70,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(70,70,70,0.5);
 }
 
 .purple {
-    background-color: blueviolet;
+    background-color: rgb(101,45,144);
     color: white;
 }
 
 .purple:hover {
-    background-color: rgb(138, 43, 255);
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(101,45,144,0.5);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(101,45,144,0.5);
+    box-shadow: 0px 0px 15px 5px rgba(101,45,144,0.5);
 }
 
 .r1{

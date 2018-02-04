@@ -9,15 +9,22 @@
         <h1>Dice Roller</h1>
 
         <div ng-controller="DiceController as ctrl">
+            <button class="dieBig purple" ng-click="ctrl.addPurpleDie()">Purple</button>
             <button class="dieBig blue" ng-click="ctrl.addBlueDie()">Blue</button>
-            <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
-            <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
             <button class="dieBig red" ng-click="ctrl.addRedDie()">Red</button>
             <button class="dieBig green" ng-click="ctrl.addGreenDie()">Green</button>
+            <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
+            <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
             <button class="dieBig black" ng-click="ctrl.addBlackDie()">Black</button>
-            <button class="dieBig purple" ng-click="ctrl.addPurpleDie()">Purple</button>
             <button class="dieBig" ng-click="ctrl.addWrongDie()">WRONG</button>
             <br>
+        </div>
+
+        <br>
+
+        <div ng-controller="ButtonController as ctrl">
+            <button ng-click="ctrl.roll()">Roll</button>
+            <button ng-click="ctrl.reset()">Reset</button>
         </div>
 
         </br>
@@ -30,13 +37,6 @@
             <br>
         </div>
 
-        <br>
-
-        <div ng-controller="ButtonController as ctrl">
-            <button ng-click="ctrl.roll()">Roll</button>
-            <button ng-click="ctrl.reset()">Reset</button>
-        </div>
-        
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
