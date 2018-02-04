@@ -2,7 +2,8 @@
     'use strict';
 
     angular.module('DiceRoller')
-        .controller('PoolController', PoolController);
+        .controller('PoolController', PoolController)
+        .directive('dieInPool', DieInPool);
 
         PoolController.$inject = ['DiceService']
         function PoolController(DiceService) {
@@ -22,6 +23,12 @@
             
             ctrl.getPool = function() {
                 return DiceService.getDicePool();
+            }
+        }
+
+        function DieInPool(){
+            return {
+                templateUrl: "src/blueDie.html" 
             }
         }
 }

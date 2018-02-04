@@ -53,14 +53,14 @@
 
             return dicePool;
         }
-
+        /*
         function randomizeDice(dicePoolRsults) {
             for(var die in dicePool) {
                 dicePool[die].currentValue = 
                     dicePool[die].sidesTable[(dicePool[die].sidesCount * Math.random() | 0)];
                 console.log(dicePool[die]);
             }
-        }
+        }*/
     }
 
     class WhiteDie {
