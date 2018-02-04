@@ -9,29 +9,25 @@
         <h1>Dice Roller</h1>
 
         <div ng-controller="DiceController as ctrl">
-            <button ng-click="ctrl.addBlueDie()">Blue</button>
-            <button ng-click="ctrl.addWhiteDie()">White</button>
-            <button ng-click="ctrl.addYellowDie()">Yellow</button>
-            <button ng-click="ctrl.addRedDie()">Red</button>
-            <button ng-click="ctrl.addGreenDie()">Green</button>
-            <button ng-click="ctrl.addBlackDie()">Black</button>
-            <button ng-click="ctrl.addPurpleDie()">Purple</button>
-            <button ng-click="ctrl.addWrongDie()">WRONG</button>
+            <button class="dieBig blue" ng-click="ctrl.addBlueDie()">Blue</button>
+            <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
+            <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
+            <button class="dieBig red" ng-click="ctrl.addRedDie()">Red</button>
+            <button class="dieBig green" ng-click="ctrl.addGreenDie()">Green</button>
+            <button class="dieBig black" ng-click="ctrl.addBlackDie()">Black</button>
+            <button class="dieBig purple" ng-click="ctrl.addPurpleDie()">Purple</button>
+            <button class="dieBig" ng-click="ctrl.addWrongDie()">WRONG</button>
             <br>
-            <!--<input type="text" ng-model="ctrl.dicePool()"/>-->
-            <!--<div>{{ctrl.dicePool()}}</div>-->
         </div>
 
         </br>
 
         <div ng-controller="PoolController as ctrl">
+            <die-in-pool style="display: inline-block" ng-repeat="die in ctrl.getPool()"></die-in-pool>
             <div>{{ctrl.getResults()}}</div>
             <br>
             <div>{{ctrl.getPool()}}</div>
             <br>
-            <div style="display: inline-block" ng-repeat="die in ctrl.getPool()">
-                <die-in-pool></die-in-pool>
-            </div>
         </div>
 
         <br>
@@ -41,15 +37,10 @@
             <button ng-click="ctrl.reset()">Reset</button>
         </div>
         
-        <div><button class="die blue"></button></div>
-
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-        <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
         <script src="lib/angular.min.js"></script>
-        <!--<script src="lib/angular-ui-router.min.js"></script>-->
 
         <script src="app.js"></script>
         <script src="src/dice.controller.js"></script>

@@ -17,7 +17,7 @@
         service.addDie = function(dieColor) {
             //when dice is added to pool, show empty dice in pool
             for(var i in dicePool) {
-                dicePool[i].currentValue = '0';
+                dicePool[i].currentValue = 'r0';
             }
 
             switch(dieColor) {
@@ -70,83 +70,83 @@
     class WhiteDie {
         constructor() {
             this.name = "white";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 6;
-            this.sidesTable = ['0','0','0','1','1','2'];
+            this.sidesTable = ['r0','r0','r0','r1','r1','r2'];
         }
     }
 
     class BlueDie {
         constructor() {
             this.name = "blue";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 8;
-            this.sidesTable = ['0','0','1','1','1','1','2','2'];
+            this.sidesTable = ['r0','r0','r1','r1','r1','r1','r2','r2'];
         }
     }
 
     class YellowDie {
         constructor() {
             this.name = "yellow";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 6;
-            this.sidesTable = ['0','1','2','2','5','7'];
+            this.sidesTable = ['r0','r1','r2','r2','r5','r7'];
         }
     }
 
     class RedDie {
         constructor() {
             this.name = "red";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 10;
-            this.sidesTable = ['0','0','8','8','14','14','12','4','4','9'];
+            this.sidesTable = ['r0','r0','r8','r8','r14','r14','r12','r4','r4','r9'];
         }
     }
 
     class GreenDie {
         constructor() {
             this.name = "green";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 10;
-            this.sidesTable = ['0','12','1','1','1','1','13','13','2','2'];
+            this.sidesTable = ['r0','r12','r1','r1','r1','r1','r13','r13','r2','r2'];
         }
     }
 
     class BlackDie {
         constructor() {
             this.name = "black";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 6;
-            this.sidesTable = ['0','0','0','3','3','4'];
+            this.sidesTable = ['r0','r0','r0','r3','r3','r4'];
         }
     }
 
     class PurpleDie {
         constructor() {
             this.name = "purple";
-            this.currentValue = '0';
+            this.currentValue = 'r0';
             this.sidesCount = 8;
-            this.sidesTable = ['0','3','3','4','6','10','10','11'];
+            this.sidesTable = ['r0','r3','r3','r4','r6','r10','r10','r11'];
         }
     }
 
     /*
         DICE RESULT:
-        0 - EMPTY
-        1 - SUCCESS
-        2 - BOON
-        3 - FAIL
-        4 - BANE
-        5 - COMET
-        6 - CHAOS
-        7 - SUCCESS+
-        8 - SUCCESS SUCCESS
-        9 - BOON BOON
-        10 - FAIL FAIL
-        11 - BANE BANE
-        12 - SUCCESS BOON
-        13 - SUCCESS DELAY
-        14 - SUCCESS SUFFER
+        r0 - EMPTY
+        r1 - SUCCESS
+        r2 - BOON
+        r3 - FAIL
+        r4 - BANE
+        r5 - COMET
+        r6 - CHAOS
+        r7 - SUCCESS+
+        r8 - SUCCESS SUCCESS
+        r9 - BOON BOON
+        r10 - FAIL FAIL
+        r11 - BANE BANE
+        r12 - SUCCESS BOON
+        r13 - SUCCESS DELAY
+        r14 - SUCCESS SUFFER
     */
 }
 )();

@@ -4,6 +4,16 @@
     width: 40px;
     border: solid 2px black;
     margin: 5px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.dieBig {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border: solid 2px black;
+    margin: 5px;
 }
 
 .blue {
@@ -38,4 +48,60 @@
 
 .blue:hover {
     background-color: deepskyblue;
+}
+
+.r1{
+    background-image: url("../img/success.jpg");
+}
+
+.r2{
+    background-image: url("../img/boon.jpg");
+}
+
+.r3{
+    background-image: url("../img/fail.jpg");
+}
+
+.r4{
+    background-image: url("../img/bane.jpg");
+}
+
+.r5{
+    background-image: url("../img/comet.jpg");
+}
+
+.r6{
+    background-image: url("../img/chaos.jpg");
+}
+
+.r7{
+    background-image: url("../img/successPlus.jpg");
+}
+
+.r8{
+    background-image: url("../img/successSuccess.jpg");
+}
+
+.r9{
+    background-image: url("../img/boonBoon.jpg");
+}
+
+.r10{
+    background-image: url("../img/failFail.jpg");
+}
+
+.r11{
+    background-image: url("../img/baneBane.jpg");
+}
+
+.r12{
+    background-image: url("../img/successBoon.jpg");
+}
+
+.r13{
+    background-image: url("../img/successDelay.jpg");
+}
+
+.r14{
+    background-image: url("../img/successSuffer.jpg");
 }

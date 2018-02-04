@@ -32,7 +32,7 @@
 
         function DieInPool(){
             return {
-                templateUrl: "src/blueDie.html" 
+                templateUrl: "src/die.html" 
             }
         }
 }
