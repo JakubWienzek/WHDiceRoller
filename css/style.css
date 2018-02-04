@@ -6,6 +6,7 @@
     margin: 5px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    cursor: pointer;
 }
 
 .dieBig {
@@ -14,26 +15,47 @@
     width: 70px;
     border: solid 2px black;
     margin: 5px;
+    cursor: pointer;
 }
 
 .blue {
-    background-color: dodgerblue;
+    background-color: rgb(30, 144, 255);
+}
+
+.blue:hover {
+    background-color: deepskyblue;
 }
 
 .white {
     background-color: white;
 }
 
+.white:hover {
+    background-color: azure;
+}
+
 .yellow {
-    background-color: yellow;
+    background-color: gold;
+}
+
+.yellow:hover {
+    background-color: rgb(255, 235, 0);
 }
 
 .red {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
+}
+
+.red:hover {
+    background-color: rgb(255, 80, 0);
 }
 
 .green {
     background-color: forestgreen;
+}
+
+.green:hover {
+    background-color: rgb(34, 169, 34);
 }
 
 .black {
@@ -41,13 +63,17 @@
     color: white;
 }
 
+.black:hover {
+    background-color: rgb(70, 70, 70);
+}
+
 .purple {
     background-color: blueviolet;
     color: white;
 }
 
-.blue:hover {
-    background-color: deepskyblue;
+.purple:hover {
+    background-color: rgb(138, 43, 255);
 }
 
 .r1{
