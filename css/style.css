@@ -10,6 +10,32 @@
     background-color: dodgerblue;
 }
 
+.white {
+    background-color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: forestgreen;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.purple {
+    background-color: blueviolet;
+    color: white;
+}
+
 .blue:hover {
     background-color: deepskyblue;
 }

@@ -53,6 +53,10 @@
 
             return dicePool;
         }
+
+        service.removeDie = function(index) {
+            dicePool.splice(index,1);
+        }
         /*
         function randomizeDice(dicePoolRsults) {
             for(var die in dicePool) {

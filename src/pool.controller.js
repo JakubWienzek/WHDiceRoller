@@ -24,6 +24,10 @@
             ctrl.getPool = function() {
                 return DiceService.getDicePool();
             }
+
+            ctrl.removeDie = function(index) {
+                DiceService.removeDie(index);
+            }
         }
 
         function DieInPool(){
