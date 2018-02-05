@@ -17,6 +17,7 @@
             //when dice is added to pool, make dice in pool empty
             for(var i in dicePool) {
                 dicePool[i].currentValue = 'r0';
+                dicePool[i].isRolled = "notRolled";
             }
 
             switch(dieColor) {
