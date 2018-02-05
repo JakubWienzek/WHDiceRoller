@@ -6,13 +6,8 @@
 
         DiceController.$inject = ['DiceService']
         function DiceController(DiceService) {
+            
             var ctrl = this;
-            var dicePool = [];
-
-            ctrl.dicePool = function() {
-                console.log(dicePool);
-                return dicePool;
-            }
 
             ctrl.addBlueDie = function() {
                 DiceService.addDie("blue");
@@ -40,10 +35,6 @@
 
             ctrl.addPurpleDie = function() {
                 DiceService.addDie("purple");
-            }
-
-            ctrl.addWrongDie = function() {
-                DiceService.addDie("wrong");
             }
         }
 }

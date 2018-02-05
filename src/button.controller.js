@@ -4,7 +4,6 @@
     angular.module('DiceRoller')
         .controller("ButtonController", ButtonController);
 
-
         ButtonController.$inject = ['DiceService'];
         function ButtonController(DiceService) {
 

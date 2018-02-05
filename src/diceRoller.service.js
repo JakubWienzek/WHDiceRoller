@@ -14,7 +14,7 @@
         }
 
         service.addDie = function(dieColor) {
-            //when dice is added to pool, show empty dice in pool
+            //when dice is added to pool, make dice in pool empty
             for(var i in dicePool) {
                 dicePool[i].currentValue = 'r0';
             }
@@ -46,21 +46,22 @@
 
         service.resetPool = function() {
             dicePool = [];
-            //may add history
-
-            return dicePool;
         }
 
         service.clickDieInPool = function(index) {
+            //if yellow die has SuccessPlus add one more die and switch this to Success
             if(dicePool[index].currentValue === "r7" 
-                && dicePool[index].isRolled === "rolled") {
+                    && dicePool[index].isRolled === "rolled") {
+                dicePool[index].currentValue = "r1";
+                dicePool.push(new YellowDie());
+                randomizeDie(dicePool.length-1);
 
-                    dicePool[index].currentValue = "r1";
-                    dicePool.push(new YellowDie());
-                    randomizeDie(dicePool.length-1);
-
+            //move rolled die to back after first click (opacity: 0.3)
             } else if(dicePool[index].isRolled === "rolled"){
                 dicePool[index].isRolled = "dieNotUsed";
+
+            //first click on not rolled die removes the die
+            //or second click on rolled die removes the die
             } else if(dicePool[index].isRolled === "notRolled" 
                     || dicePool[index].isRolled === "dieNotUsed"){
                 dicePool.splice(index,1);
@@ -74,6 +75,10 @@
         }
     }
 
+
+    /**
+     * Used dice classes
+     */
     class WhiteDie {
         constructor() {
             this.name = "white";
@@ -144,7 +149,7 @@
         }
     }
 
-    /*
+    /**
         DICE RESULT:
         r0 - EMPTY
         r1 - SUCCESS

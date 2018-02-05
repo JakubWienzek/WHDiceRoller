@@ -16,7 +16,6 @@
             <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
             <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
             <button class="dieBig black" ng-click="ctrl.addBlackDie()">Black</button>
-            <button class="dieBig" ng-click="ctrl.addWrongDie()">WRONG</button>
             <br>
         </div>
 
@@ -31,15 +30,14 @@
 
         <div ng-controller="PoolController as ctrl">
             <die-in-pool style="display: inline-block" ng-repeat="die in ctrl.getPool()"></die-in-pool>
-            <div>{{ctrl.getResults()}}</div>
             <br>
-            <div>{{ctrl.getPool()}}</div>
-            <br>
+            <!--
+                //some debuging lines
+                <div>{{ctrl.getPool()}}</div> <br>
+            -->
         </div>
 
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+        <script src="lib/jquery-3.3.1.min.js"></script>
         <script src="lib/angular.min.js"></script>
 
         <script src="app.js"></script>

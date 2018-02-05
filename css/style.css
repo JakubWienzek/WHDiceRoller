@@ -1,3 +1,6 @@
+/**
+*   General style
+*/
 body {
     color: #ddd;
     background-color: #222222;
@@ -28,6 +31,9 @@ body {
     opacity: 0.3;
 }
 
+/**
+*   Dice color styling
+*/
 .blue {
     background-color: #0e78b6;
 }
@@ -100,66 +106,37 @@ body {
     box-shadow: 0px 0px 15px 5px rgba(101,45,144,0.5);
 }
 
-.r1{
-    background-image: url("../img/success.jpg");
-}
+/**
+*   Images for results
+*/
+.r1 {background-image: url("../img/success.jpg");}
 
-.r2{
-    background-image: url("../img/boon.jpg");
-}
+.r2 {background-image: url("../img/boon.jpg");}
 
-.r3.purple{
-    background-image: url("../img/fail.jpg");
-}
+.r3.purple {background-image: url("../img/fail.jpg");}
 
-.r3.black{
-    background-image: url("../img/failBlack.jpg");
-}
+.r3.black {background-image: url("../img/failBlack.jpg");}
 
-.r4{
-    background-image: url("../img/bane.jpg");
-}
+.r4 {background-image: url("../img/bane.jpg");}
 
-.r5{
-    background-image: url("../img/comet.jpg");
-}
+.r5 {background-image: url("../img/comet.jpg");}
 
-.r6{
-    background-image: url("../img/chaos.jpg");
-}
+.r6 {background-image: url("../img/chaos.jpg");}
 
-.r7{
-    background-image: url("../img/successPlus.jpg");
-}
+.r7 {background-image: url("../img/successPlus.jpg");}
 
-.r8{
-    background-image: url("../img/successSuccess.jpg");
-}
+.r8 {background-image: url("../img/successSuccess.jpg");}
 
-.r9{
-    background-image: url("../img/boonBoon.jpg");
-}
+.r9 {background-image: url("../img/boonBoon.jpg");}
 
-.r10{
-    background-image: url("../img/failFail.jpg");
-}
+.r10 {background-image: url("../img/failFail.jpg");}
 
-.r11{
-    background-image: url("../img/baneBane.jpg");
-}
+.r11 {background-image: url("../img/baneBane.jpg");}
 
-.r12{
-    background-image: url("../img/successBoon.jpg");
-}
+.r12.green {background-image: url("../img/successBoon.jpg");}
 
-.r12.red{
-    background-image: url("../img/successBoonRed.jpg");
-}
+.r12.red {background-image: url("../img/successBoonRed.jpg");}
 
-.r13{
-    background-image: url("../img/successDelay.jpg");
-}
+.r13 {background-image: url("../img/successDelay.jpg");}
 
-.r14{
-    background-image: url("../img/successSuffer.jpg");
-}
+.r14 {background-image: url("../img/successSuffer.jpg");}
