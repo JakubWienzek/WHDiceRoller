@@ -13,7 +13,6 @@
                 var results = [];
                 var pool = DiceService.getDicePool();
 
-
                 for(var i in pool) {
                     results.push(pool[i].currentValue);
                 }
@@ -25,8 +24,8 @@
                 return DiceService.getDicePool();
             }
 
-            ctrl.removeDie = function(index) {
-                DiceService.removeDie(index);
+            ctrl.clickDieInPool = function(index) {
+                DiceService.clickDieInPool(index);
             }
         }
 

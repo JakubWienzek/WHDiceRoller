@@ -4,7 +4,6 @@
     angular.module('DiceRoller')
         .service('DiceService', DiceService);
 
-    //DiceService.$inject =[];
     function DiceService() {
         
         var service = this;
@@ -41,9 +40,7 @@
 
         service.rollDice = function() {
             for(var die in dicePool) {
-                dicePool[die].currentValue = 
-                    dicePool[die].sidesTable[(dicePool[die].sidesCount * Math.random() | 0)];
-                console.log(dicePool[die]);
+                randomizeDie(die);
             }
         }
 
@@ -54,17 +51,27 @@
             return dicePool;
         }
 
-        service.removeDie = function(index) {
-            dicePool.splice(index,1);
-        }
-        /*
-        function randomizeDice(dicePoolRsults) {
-            for(var die in dicePool) {
-                dicePool[die].currentValue = 
-                    dicePool[die].sidesTable[(dicePool[die].sidesCount * Math.random() | 0)];
-                console.log(dicePool[die]);
+        service.clickDieInPool = function(index) {
+            if(dicePool[index].currentValue === "r7" 
+                && dicePool[index].isRolled === "rolled") {
+
+                    dicePool[index].currentValue = "r1";
+                    dicePool.push(new YellowDie());
+                    randomizeDie(dicePool.length-1);
+
+            } else if(dicePool[index].isRolled === "rolled"){
+                dicePool[index].isRolled = "dieNotUsed";
+            } else if(dicePool[index].isRolled === "notRolled" 
+                    || dicePool[index].isRolled === "dieNotUsed"){
+                dicePool.splice(index,1);
             }
-        }*/
+        }
+        
+        function randomizeDie(index) {
+            dicePool[index].currentValue = 
+                dicePool[index].sidesTable[(dicePool[index].sidesCount * Math.random() | 0)];
+                dicePool[index].isRolled = "rolled";
+        }
     }
 
     class WhiteDie {
@@ -73,6 +80,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 6;
             this.sidesTable = ['r0','r0','r0','r1','r1','r2'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -82,6 +90,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 8;
             this.sidesTable = ['r0','r0','r1','r1','r1','r1','r2','r2'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -91,6 +100,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 6;
             this.sidesTable = ['r0','r1','r2','r2','r5','r7'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -100,6 +110,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 10;
             this.sidesTable = ['r0','r0','r8','r8','r14','r14','r12','r4','r4','r9'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -109,6 +120,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 10;
             this.sidesTable = ['r0','r12','r1','r1','r1','r1','r13','r13','r2','r2'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -118,6 +130,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 6;
             this.sidesTable = ['r0','r0','r0','r3','r3','r4'];
+            this.isRolled = 'notRolled';
         }
     }
 
@@ -127,6 +140,7 @@
             this.currentValue = 'r0';
             this.sidesCount = 8;
             this.sidesTable = ['r0','r3','r3','r4','r6','r10','r10','r11'];
+            this.isRolled = 'notRolled';
         }
     }
 

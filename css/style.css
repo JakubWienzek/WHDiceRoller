@@ -24,6 +24,10 @@ body {
     cursor: pointer;
 }
 
+.dieNotUsed {
+    opacity: 0.3;
+}
+
 .blue {
     background-color: #0e78b6;
 }
