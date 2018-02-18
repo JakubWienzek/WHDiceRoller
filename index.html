@@ -8,15 +8,13 @@
     <body ng-app="DiceRoller">
         <h1>Warhammer 3ed Dice Roller</h1>
 
-        <div ng-controller="DiceController as ctrl">
-            <button class="dieBig purple" ng-click="ctrl.addPurpleDie()">Purple</button>
-            <button class="dieBig blue" ng-click="ctrl.addBlueDie()">Blue</button>
-            <button class="dieBig red" ng-click="ctrl.addRedDie()">Red</button>
-            <button class="dieBig green" ng-click="ctrl.addGreenDie()">Green</button>
-            <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
-            <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
-            <button class="dieBig black" ng-click="ctrl.addBlackDie()">Black</button>
+        <div id="pickedDice" ng-controller="PoolController as ctrl">
+            <die-in-pool style="display: inline-block" ng-repeat="die in ctrl.getPool()"></die-in-pool>
             <br>
+            <!--
+                //some debuging lines
+                <div>{{ctrl.getPool()}}</div> <br>
+            -->
         </div>
 
         <br>
@@ -27,14 +25,16 @@
         </div>
 
         </br>
-
-        <div ng-controller="PoolController as ctrl">
-            <die-in-pool style="display: inline-block" ng-repeat="die in ctrl.getPool()"></die-in-pool>
+        
+        <div ng-controller="DiceController as ctrl">
+            <button class="dieBig purple" ng-click="ctrl.addPurpleDie()">Purple</button>
+            <button class="dieBig black" ng-click="ctrl.addBlackDie()">Black</button>
+            <button class="dieBig blue" ng-click="ctrl.addBlueDie()">Blue</button>
+            <button class="dieBig red" ng-click="ctrl.addRedDie()">Red</button>
+            <button class="dieBig green" ng-click="ctrl.addGreenDie()">Green</button>
+            <button class="dieBig yellow" ng-click="ctrl.addYellowDie()">Yellow</button>
+            <button class="dieBig white" ng-click="ctrl.addWhiteDie()">White</button>
             <br>
-            <!--
-                //some debuging lines
-                <div>{{ctrl.getPool()}}</div> <br>
-            -->
         </div>
 
         <script src="lib/jquery-3.3.1.min.js"></script>
