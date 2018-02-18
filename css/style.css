@@ -8,13 +8,13 @@ body {
 }
 
 #pickedDice {
-    height: 110px;
+    height: 130px;
 }
 
 .die {
     display: inline-block;
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border: solid 2px black;
     margin: 5px;
     background-repeat: no-repeat;
@@ -25,8 +25,8 @@ body {
 
 .dieBig {
     display: inline-block;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     border: solid 2px black;
     margin: 5px;
     cursor: pointer;
