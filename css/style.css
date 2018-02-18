@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     cursor: pointer;
+    outline: none;
 }
 
 .dieBig {
@@ -25,10 +26,30 @@ body {
     border: solid 2px black;
     margin: 5px;
     cursor: pointer;
+    outline: none;
 }
 
 .dieNotUsed {
     opacity: 0.3;
+}
+
+.actionBtn {
+    background-color: #3a3a3a;
+    border: solid #eee 2px;
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px 15px;
+    outline: none;
+}
+
+.actionBtn:active {
+    background-color: #1a1a1a;
+    outline: none;
 }
 
 /**
